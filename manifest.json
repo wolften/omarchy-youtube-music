@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "wolften.youtube-music",
+  "name": "YouTube Music",
+  "version": "2.0.2",
+  "author": "wolften",
+  "license": "MIT",
+  "description": "YouTube Music as a bar-anchored Chromium app window, with playback that continues while the dropdown is hidden.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "YouTube Music",
+    "description": "Open YouTube Music from the bar and control playback",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "display": "icon"
+    },
+    "schema": [
+      {
+        "key": "display",
+        "type": "string",
+        "label": "Bar display",
+        "defaultValue": "icon",
+        "description": "icon for the YouTube Music mark, player for inline now-playing."
+      }
+    ]
+  }
+}
