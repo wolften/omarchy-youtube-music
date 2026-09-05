@@ -20,6 +20,18 @@ Depois adicione à barra (`~/.config/omarchy/shell.json`, seção `right`):
 { "id": "wolften.youtube-music", "display": "icon" }
 ```
 
+## Remove
+
+```bash
+omarchy plugin remove wolften.youtube-music
+```
+
+Remova também a entrada `wolften.youtube-music` de `~/.config/omarchy/shell.json` se tiver adicionado manualmente.
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
+
 ## Tests
 
 ```bash
