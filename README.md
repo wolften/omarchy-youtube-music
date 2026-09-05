@@ -1,12 +1,12 @@
 # omarchy-youtube-music
 
-YouTube Music como janela dropdown ancorada na barra do Omarchy (Chromium em modo app). A reprodução continua enquanto o dropdown está oculto.
+YouTube Music as a dropdown window anchored to the Omarchy bar (Chromium in app mode). Playback continues while the dropdown is hidden.
 
-- Clique: mostra/oculta instantaneamente (sem animação, abre direto na posição)
-- Clique fora, troca de foco ou de workspace: oculta automaticamente
-- Ícone na barra mostra a faixa atual; clique do meio alterna play/pause
+- Click: shows/hides instantly (no animation, opens directly in position)
+- Clicking outside, focus change, or workspace switch: hides automatically
+- Bar icon shows the current track; middle-click toggles play/pause
 
-Requer `chromium` (ou `google-chrome`) instalado.
+Requires `chromium` (or `google-chrome`) installed.
 
 ## Install
 
@@ -14,7 +14,7 @@ Requer `chromium` (ou `google-chrome`) instalado.
 omarchy plugin add https://github.com/wolften/omarchy-youtube-music --enable
 ```
 
-Depois adicione à barra (`~/.config/omarchy/shell.json`, seção `right`):
+Then add it to the bar (`~/.config/omarchy/shell.json`, `right` section):
 
 ```json
 { "id": "wolften.youtube-music", "display": "icon" }
@@ -26,7 +26,7 @@ Depois adicione à barra (`~/.config/omarchy/shell.json`, seção `right`):
 omarchy plugin remove wolften.youtube-music
 ```
 
-Remova também a entrada `wolften.youtube-music` de `~/.config/omarchy/shell.json` se tiver adicionado manualmente.
+Also remove the `wolften.youtube-music` entry from `~/.config/omarchy/shell.json` if you added it manually.
 
 ## License
 
