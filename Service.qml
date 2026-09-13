@@ -12,7 +12,7 @@ Item {
   property var shell: null
   property var manifest: null
 
-  readonly property string sourceDir: manifest && manifest.__sourceDir ? String(manifest.__sourceDir) : ""
+  readonly property string sourceDir: decodeURIComponent(Qt.resolvedUrl("control.sh").toString().replace(/^file:\/\//, "").replace(/\/[^/]*$/, ""))
   readonly property string controlPath: sourceDir ? sourceDir + "/control.sh" : ""
   readonly property string rulesPath: sourceDir ? sourceDir + "/hypr/youtube-music.lua" : ""
 
